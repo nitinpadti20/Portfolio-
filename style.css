@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Professional sans-serif */
+}
+.main{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(bg.jpg); /* Darker overlay */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    width: 120px; /* Slightly smaller logo */
+    cursor: pointer;
+}
+ul{
+    margin-top: 0;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+ul li a{
+    font-size:1em;
+    font-weight: normal;
+    text-decoration: none;
+    color: #E0E0E0; /* Light Gray */
+    transition: .3s ease;
+}
+ul li a:hover{
+    color: #A9D0F5; /* Light Blue */
+}
+.info{
+    margin-left: 10%; /* Adjusted margin */
+    margin-top: 10%; /* Adjusted margin */
+    color: white;
+}
+.info h1{
+    font-size: 4em;
+    color: #FFFFFF; /* White */
+    margin-bottom: 10px;
+}
+.info h2{
+    font-size: 2em;
+    color:#B0C4DE; /* Light Steel Blue */
+    margin-bottom: 5px;
+}
+.info h3{
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    color: #D3D3D3; /* Light Gray */
+    max-width: 600px;
+}
+.info span{
+    color: #A9D0F5; /* Light Blue */
+}
+.info a{
+    text-decoration: none;
+    color: #fff;
+    background: #4682B4; /* Steel Blue */
+    margin-top: 30px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .3s ease;
+}
+.info a:hover{
+    background: #5F9EA0; /* Cadet Blue */
+}
+.image{
+    width: 35%; /* Slightly larger image area */
+    height: 70%; /* Slightly taller image area */
+    position: absolute;
+    right: 50px; /* Adjusted position */
+    bottom: 0;
+}
+.image img{
+    position: absolute;
+    height:100%; /* Fit image within area */
+    left: 50%;
+    transform: translateX(-50%); /* Center image */
+    bottom: 0;
+    transition: transform 0.5s ease;
+}
+.image:hover img{
+    transform: translateX(-50%) translateY(-10px); /* Subtle hover effect */
+}
+.icons{
+    position: absolute;
+    bottom: 50px;
+    left: 10%; /* Aligned with info text */
+}
+.icons a{
+    text-decoration: none;
+    color: #E0E0E0; /* Light Gray */
+    margin-right: 20px;
+}
+.icons ion-icon{
+    font-size: 2.5em;
+    transition: .3s ease;
+}
+.icons ion-icon:hover{
+    color: #A9D0F5; /* Light Blue */
+}
